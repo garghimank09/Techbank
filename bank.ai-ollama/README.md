@@ -63,12 +63,7 @@ Frontend runs on: **http://localhost:5173**
    - Copy `.env.example` to `.env` (if exists)
    - Or create `.env` with:
      ```
-     POSTGRES_HOST=localhost
-     POSTGRES_PORT=5432
-     POSTGRES_DB=techbank
-     POSTGRES_USER=postgres
-     POSTGRES_PASSWORD=postgres
-     PORT=5000
+     
      CORS_ORIGINS=http://localhost:5173,http://localhost:3000,http://localhost:3001
      ```
 
@@ -251,13 +246,6 @@ Bank.Ai/
 ## 🔐 Environment Variables
 
 ### Backend (.env)
-```env
-# Database
-POSTGRES_HOST=localhost
-POSTGRES_PORT=5432
-POSTGRES_DB=techbank
-POSTGRES_USER=postgres
-POSTGRES_PASSWORD=postgres
 
 # Server
 HOST=0.0.0.0
@@ -265,7 +253,7 @@ PORT=5000
 
 # JWT
 JWT_SECRET_KEY=your-secret-key-change-this
-JWT_ALGORITHM=HS256
+JWT_ALGORITHM=-----
 JWT_EXPIRATION_HOURS=24
 
 # OpenAI (optional)
